@@ -68,15 +68,23 @@ function getLast( array ) {
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
+
+let vehicles = ['bike', 'truck', 'boat', 'car'];
+
 function find( value, array ){
   console.log( 'find', (value, array));
-  if (value.array found );{
-    return true;
+  for (let i=0; i<array.length; i++){
+    if (value === array[i]){
+      return true;
+    }
   }
   else{
-    return false;
-  }
+    if (value != array[i]){
+      return false;
+    }
 }
+
+console.log(find('boat', vehicles));
 
 // ----------------------
 // Stretch Goals
