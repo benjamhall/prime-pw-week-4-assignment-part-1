@@ -26,6 +26,7 @@ function addNumbers( firstNumber, secondNumber ) {
 // return firstNumber + secondNumber;
 }
 
+console.log('addNumbers', addNumbers(7,2));
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( firstNumber, secondNumber, thirdNumber ){
@@ -34,6 +35,7 @@ function multiplyThree( firstNumber, secondNumber, thirdNumber ){
   return answer;
 }
 
+console.log('multiplyThree', multiplyThree(4,5,3));
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
@@ -60,13 +62,13 @@ let numbers = [3,8,10,13];
 
 let empty = [];
 
-function getLast( array ){
+function getLast(array){
   console.log( 'getLast', (array));
-  for (let i=0; i<array.length; i++){
-    if (i === array.length -1){
-      return array[i];
-    }
-  }
+  //for (let i=0; i<array.length; i++){
+    //if(i === array.length -1){
+      return array[array.length -1];
+    //}
+//  }
 }
 
 console.log(getLast(numbers));
@@ -103,7 +105,7 @@ console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll( ) {
-  let sum = 0
+  let sum = 0;
   // TODO: loop to add items
   return sum;
 }
